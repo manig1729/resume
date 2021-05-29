@@ -1,0 +1,217 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Manikandan Gunaseelan} \\ \vspace{1pt}
+    \small +91-7448090869 $|$ \href{mailto:manikandang1729@gmail.com}{\underline{E-Mail}} $|$ 
+    \href{https://linkedin.com/in/manikandan-gunaseelan}{\underline{LinkedIn}} $|$
+    \href{https://github.com/manig1729}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BITS Pilani, K K Birla Goa Campus}{Current GPA : \textbf{7.53/10}}
+      {BE (hons) Electronics and Communication Engineering}{Aug. 2018 -- Present}
+    \resumeSubheading
+      {DAV Public School, Pune}{Score : 92.8\%}
+      {Grade XII}{May 2018}
+    \resumeSubheading
+      {DAV Public School, Pune}{GPA : 10/10}
+      {Grade X}{May 2016}
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills and Coursework}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Relevant Coursework}{: Computer Architecture, Digital Design, Microprocessor Programming and Interfacing, Digital Communication, Cryptography, Digital Signal Processing, Analog Electronics} \\
+     \vspace{1mm}
+     \textbf{Technical Skills}{: Verilog, C, C++, Python,
+GNU/Linux, Bash Scripting, MATLAB, Simulink, LTSpice, Xilinx Vivado, ModelSim, Cadence Virtuoso, Proteus 7} \\
+    }
+ \end{itemize}
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Implementation of MIPS Processor in Verilog} $|$ \emph{Computer Architecture}}{Mar 2021 -- Apr 2021}
+          \resumeItemListStart
+            \resumeItem{GitHub Links : \href{https://github.com/manig1729/mips-pipelined-processor}{\underline{pipelined-processor} and \href{https://github.com/manig1729/mips-single-cycle-processor}{\underline{single-cycle-processor}}}}
+            \resumeItem{Verilog implementation of pipelined and single-cycle (modified) MIPS processors}
+            \resumeItem{Single cycle processor had a floating point addition instruction which used a separate IEEE754 Floating point adder module}
+            \resumeItem{Pipelined processor with a forwarding unit, hazard detection unit and basic branch prediction to tackle data and control hazards}
+            \resumeItem{Understood the basics of processor working and design, the differences between single-cycle and pipelined processors, and the
+handling of various hazards that arise when working with a pipelined processor}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Parking Garage System using LM741 Op-Amp} $|$ \emph{Analog Electronics}}{Mar 2021 -- Apr 2021}
+          \resumeItemListStart
+            \resumeItem{GitHub Link : \href{https://github.com/manig1729/parking-garage-system}{\underline{parking-garage-system}}}
+            \resumeItem{Using Op-Amp 741, designed a parking garage system which counts the number of cars entering and leaving the garage and displays whether the garage is full (or half full) on LEDs at the entrance}
+            \resumeItem{Simulation of the design on LT-Spice and testing the design for different inputs}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Spirit Level Reaction Time Tester} $|$ \emph{Microprocessor Programming}}{Mar 2020 -- Apr 2020}
+          \resumeItemListStart
+            \resumeItem{GitHub Link : \href{https://github.com/manig1729/spirit-level-tester}{\underline{spirit-level-tester}}}
+            \resumeItem{Implemented a reaction time tester on the Intel 8086 Microprocessor which checks a person's sobriety based on their reaction time in pressing a button upon seeing a sequence of LEDs}
+            \resumeItem{Also included a simulation on Proteus 7 using the x86 Assembly language}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Summer Intern}{May 2020 - June 2020}
+      {Data M Intelligence}{Hyderabad, TS}
+      \resumeItemListStart
+        \resumeItem{Learnt about SEO techniques and performed lead generation for the markets of hundreds of products over a six week period}
+        \resumeItem{Automated a task of updating multiple services and search engines about changes to the website using the Selenium library of Python}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-------------CERTIFICATIONS---------------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Google IT Support Professional Certificate} $|$ \emph{Coursera}}{July 2020}
+          \resumeItemListStart
+            \resumeItem{Included courses on Networking Fundamentals, Operating Systems, System Administration and IT security}
+            \resumeItem{Verilog implementation of pipelined and single-cycle (modified) MIPS processors}
+            \resumeItem{Hands-on experience in the form of virtual labs conducted on Qwiklabs}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Introduction to Data Analytics for Business} $|$ \emph{Coursera}}{June 2020}
+          \resumeItemListStart
+            \resumeItem{Learnt about the data analytics practices executed in the business world - how data is created, stored, accessed and then later analysed}
+            \resumeItem{Involved a module on the basics of SQL}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
