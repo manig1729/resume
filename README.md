@@ -1,4 +1,2 @@
 # resume
-Latex file of my resume
-
-Compiled using pdflatex
+Resume PDF compiled using pdflatex
